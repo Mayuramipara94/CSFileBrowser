@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var  arrAttachments = ["https://www.gstatic.com/webp/gallery/1.jpg",
+        var attachments = ["https://www.gstatic.com/webp/gallery/1.jpg",
                                "https://www.gstatic.com/webp/gallery/2.jpg",
                                "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
                                "https://www.gstatic.com/webp/gallery/4.jpg",
@@ -30,16 +30,11 @@ class ViewController: UIViewController {
         if let documentsPathURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
 
             for document in listFilesFromDocumentsFolder() ?? []{
-                arrAttachments.append(documentsPathURL.appendingPathComponent("/\(document)").path)
+                attachments.append(documentsPathURL.appendingPathComponent("/\(document)").path)
             }
         }
         
-        CSFileBrowser.openAttachmentSlider(navigation: self.navigationController!, attachment: arrAttachments)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        CSFileBrowser.openAttachmentSlider(navigation: self.navigationController!, attachment: attachments)
     }
     
     func listFilesFromDocumentsFolder() -> [String]?
