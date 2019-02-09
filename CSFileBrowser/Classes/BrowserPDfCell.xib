@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BrowserPDfCell" customModule="BrowserDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C1E-py-1fZ">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </webView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="yfr-QA-MPd">
+                        <rect key="frame" x="15" y="15" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="yfr-QA-MPd" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ITj-YR-oxp"/>
+                <constraint firstAttribute="bottom" secondItem="C1E-py-1fZ" secondAttribute="bottom" id="Pzs-Pa-bM7"/>
+                <constraint firstItem="C1E-py-1fZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TOt-1p-3UP"/>
+                <constraint firstItem="yfr-QA-MPd" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="n9v-V0-BF9"/>
+                <constraint firstAttribute="trailing" secondItem="C1E-py-1fZ" secondAttribute="trailing" id="wHt-zt-JWJ"/>
+                <constraint firstItem="C1E-py-1fZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wvq-Sy-CCI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="activityIndicator" destination="yfr-QA-MPd" id="4mY-cO-4Os"/>
+                <outlet property="webView" destination="C1E-py-1fZ" id="TYO-30-1CL"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

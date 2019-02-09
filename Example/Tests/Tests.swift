@@ -1,5 +1,5 @@
 import XCTest
-import CSFileBrowser
+//import CSFileBrowser
 
 class Tests: XCTestCase {
     

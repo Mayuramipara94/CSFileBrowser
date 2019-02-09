@@ -1,24 +1,13 @@
-#
-# Be sure to run `pod lib lint CSFileBrowser.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name             = 'CSFileBrowser'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of CSFileBrowser.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'This is an iOS library that shows an image,Pdf,Audio,Video.'
+  s.swift_version    = '4.2'
+  s.platform         = :ios
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: This is an iOS library that shows an image,Pdf,Audio,Video with a page indicator. Users can scroll through local and remote         image,Pdf,Audio,Video.
                        DESC
 
   s.homepage         = 'https://github.com/Mayuramipara94/CSFileBrowser'
@@ -28,15 +17,19 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/Mayuramipara94/CSFileBrowser.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'CSFileBrowser/Classes/**/*'
+  s.ios.deployment_target = '10.0'
+  s.pod_target_xcconfig = { "SWIFT_VERSION" => "4.2" }
+  s.requires_arc = true
   
-  # s.resource_bundles = {
-  #   'CSFileBrowser' => ['CSFileBrowser/Assets/*.png']
-  # }
+  #s.source_files = 'CSFileBrowser/Classes/**/*'
+  
+  s.source_files = 'CSFileBrowser/Classes/**/*.{swift}'
+  s.resource_bundles = {
+      'CSFileBrowser' => ['CSFileBrowser/Classes/**/*.{storyboard,xib,xcassets,json,imageset,png}']
+  }
+  
+  s.frameworks = 'UIKit', 'AVKit'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

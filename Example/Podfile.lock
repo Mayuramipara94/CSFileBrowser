@@ -1,0 +1,16 @@
+PODS:
+  - CSFileBrowser (0.1.0)
+
+DEPENDENCIES:
+  - CSFileBrowser (from `../`)
+
+EXTERNAL SOURCES:
+  CSFileBrowser:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CSFileBrowser: 5bf5328c52fa108e637be3993917c4bc00393c56
+
+PODFILE CHECKSUM: 079a0d7dfe78600d72d007d9e3e576679745a2f8
+
+COCOAPODS: 1.5.3

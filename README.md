@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+iOS 10.0+ | Xcode 10.0+ | Swift 4.2+
+
 ## Installation
 
 CSFileBrowser is available through [CocoaPods](https://cocoapods.org). To install
@@ -22,7 +24,7 @@ pod 'CSFileBrowser'
 
 ## Author
 
-Mayuramipara94, mayur.amipara@coruscate.co.in
+Mayur Amipara
 
 ## License
 
