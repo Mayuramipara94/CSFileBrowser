@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CSFileBrowser_Example' do
+  pod 'CSFileBrowser', :path => '../'
+
+  target 'CSFileBrowser_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
