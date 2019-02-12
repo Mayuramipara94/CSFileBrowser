@@ -14,11 +14,11 @@ This is an iOS library that shows an image,Pdf,Audio,Video with a page count. Us
 
 | Image | Video |
 | ------------- | --------------- |
-| ![sample](https://github.com/Mayuramipara94/CSFileBrowser/blob/master/Screenshot/image1.png) | ![sample](https://github.com/Mayuramipara94/CSFileBrowser/blob/master/Screenshot/video1.png) |
+| ![sample](https://github.com/Mayuramipara94/CSFileBrowser/blob/master/Screenshot/image2.png) | ![sample](https://github.com/Mayuramipara94/CSFileBrowser/blob/master/Screenshot/video2.png) |
 
 | PDF | Audio |
 | ------------- | --------------- |
-| ![sample](Screenshot/pdf.png) | ![sample](Screenshot/audio.png) |
+| ![sample](https://github.com/Mayuramipara94/CSFileBrowser/blob/master/Screenshot/pdf2.png) | ![sample](https://github.com/Mayuramipara94/CSFileBrowser/blob/master/Screenshot/audio2.png) |
 
 
 ## Requirements
