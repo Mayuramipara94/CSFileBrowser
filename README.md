@@ -14,7 +14,7 @@ This is an iOS library that shows an image,Pdf,Audio,Video with a page count. Us
 
 | Image | Video |
 | ------------- | --------------- |
-| ![sample](Screenshot/image.png) | ![sample](Screenshot/video.png) |
+| ![sample](https://github.com/Mayuramipara94/CSFileBrowser/blob/master/Screenshot/image1.png) | ![sample](https://github.com/Mayuramipara94/CSFileBrowser/blob/master/Screenshot/video1.png) |
 
 | PDF | Audio |
 | ------------- | --------------- |
