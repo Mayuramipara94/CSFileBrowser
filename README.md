@@ -27,7 +27,7 @@ iOS 10.0+ | Xcode 9.0+ | Swift 4.2+
 
 ## Installation
 
-CSFileBrowser is available through [CocoaPods](https://cocoapods.org). To install
+CSFileBrowser is available through [CocoaPods](https://cocoapods.org/pods/CSFileBrowser). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
